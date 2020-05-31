@@ -1,0 +1,236 @@
+<html>
+<title> Java Script Learning </title>
+<head>
+
+<script>
+/*
+var a= prompt("What is Your age ?");
+switch (true)
+{
+case (a<20):
+alert("You are Chotu");
+break;
+
+case (a>=20 && a<30):
+alert("You are Teenager");
+break;
+
+case (a>=30 && a<40):
+console.log("You are Dhabrya");
+break;
+
+case(a>40):
+console.log("You are Mhatare");
+break;
+
+default:("Enter valid age");
+}
+
+var b= prompt("What is your mobile number ?")
+alert("Your mobile number is " +b);
+
+
+var a1= prompt("What is your age ?")
+b1=(a1<20)?"You are teen":"You are not teen";
+document.write(b1);
+
+console.time();
+var c= prompt("What is 2+2 ?");
+if(c==4){
+alert("Congratukations");
+}
+else{
+alert("Try again by reloading this page");
+}
+console.timeEnd();
+
+var b1= prompt("What is your Name ?");
+var b2= prompt("What is your Branch Name ?");
+var b3= prompt("What is your Roll Number ?");
+var b4= prompt("What is your Email ?");
+
+document.write("Your name is " +b1 ) ;
+document.write("Your Branch is " +b2 ) ;
+document.write("Your Roll Number is " +b3 ) ;
+document.write("Your Email is " +b4 ) ;
+
+
+
+function sum(maths,science,history,english){
+var a=(maths+science+history+english);
+return a;}
+
+function percentage(tt){
+var per=tt/400*100;
+alert("Average of all subject is " +per)}
+
+var total= sum(100,100,100,100);
+percentage(total);
+
+
+var a=1;
+while(a<=10){
+document.write(a +") HD is great <br>");
+a++;
+}
+var a=1;
+do{
+	document.write(a + ") HD Is Great<br>");
+	a++}
+	while(a<=10)
+
+
+for(var a=1;a<=10;a++)
+	{
+		if(a==4 || a==9 )
+			{ document.write("Hello "+ a + "<br>");continue; }
+
+
+	document.write("Number "+ a + "<br>"); }
+
+
+
+var a = prompt("Enter a number");
+
+{
+	if( a % 2 == 0)
+{ alert( "Entered number  " + a + "  is Even ");}
+	else { alert( "Entered number  " + a + "is odd ");}
+
+}
+
+
+for(var a=1;a<=100;a=a+10)
+ {
+	for(var b=a;b<a+10;b++)
+		{document.write(b +"|| ");}
+			document.write("<br>");}
+
+
+for(var a=1;a<=5;a++)
+{ for (var b=1;b<=a;b++)
+	{document.write( " " + a + " " );}
+	document.write("<br>")
+}
+
+for(var a=5;a>=1;a--)
+{ for (var b=1;b<=a;b++)
+	{document.write(a);}
+	document.write("<br>")
+}
+
+
+var arr = [10,20,30,40,50,60,72];
+document.write("<ul>")
+for(var a=0;a<5;a++)
+{
+ document.write("<li>" + arr[a] + "</li>");
+  document.write("<br>");
+}
+document.write("</ul>")
+
+
+var arr= new Array(3);
+
+for(var g=0;g<3;g++){
+arr[g]= prompt("Enter Three Values");
+}
+
+for(var a=0;a<3;a++)
+{ document.write(arr[a]);
+	document.write("<br>");}
+
+
+var arr= [
+["Name","City","Degree","Pointer of Sem 7"],
+["Hari","Dombivli","BE",8.23],
+["Gaurav","Thane","BE",9.08],
+["Ashitosh","Andheri","BE",7 .8],
+["Sumedh","Airoli","BE",7.5]
+];
+
+document.write("<table border='1px' cellspacing='0'>")
+	for(var a=0;a<arr.length;a++)
+	{
+		document.write("<tr align='center'>")
+			for(var b=0;b<arr[a].length;b++)
+				{
+					document.write("<td>" + arr[a][b] + "</td>");
+					}
+		document.write("</tr>")
+	}
+document.write("</table>")
+
+var hd = {
+	name : 'Hariom',
+	age : 21,
+	city : 'Parbhani',
+	college : 'SSJCOE',
+	degree : 'BE',
+	branch : 'Computer Engg'
+};
+
+for(var hari in hd){
+document.write(hari + " : " + hd[hari] + "<br>");
+}
+
+*/
+</script>
+
+
+</head>
+<body >
+
+<form action=''>
+
+<label> Fisrt name </label><input type="text" id="fname" oninput="inputfunction(this)" onfocus="focusfunction(this)" onblur="blurfunction(this)" required><br><br>
+<label> Last name As HD HHHH</label><input type="text" id="lname" oninput="inputfunction(this)"><br><br>
+<label> College name </label><input type="text" id="cname" oninput="inputfunction(this)"><br><br>
+<label> City </label>
+<select id="city" >
+<option value="">Select City</option>
+<option value="">Dombivli</option>
+<option value="">Thane</option>
+<option value="">Kalwa</option>
+<option value="">Andheri</option>
+<option value="">Karjat</option>
+
+</select><br><br>
+<button input type="submit" id="sub1" onmouseenter="btnfunction()" onmouseleave="btnfunction2()">Submit</button>
+</form>
+
+<div id="hari" style="border:2px solid red;"></div>
+
+
+<script>
+/*
+document.getElementById("b1").addEventListener("mouseenter",function(){
+//document.write("Ankita is Dhami");
+})
+document.getElementById("b1").addEventListener("click",function(){
+alert("Nikal");
+});
+*/
+
+function inputfunction(element){
+var x = element.value;
+document.getElementById("hari").innerText = x;
+console.getElementById("hari");
+}
+
+function focusfunction(element){
+document.getElementById("fname").style.border="2px";
+}
+
+function blurfunction(element){
+document.getElementById("fname").style.background= "";
+}
+function btnfunction(){
+document.getElementById("sub1").style.color="red";
+}
+function btnfunction2(){
+document.getElementById("sub1").style.color= "";
+}
+</script>
+</body>
+</html>
