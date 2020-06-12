@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Univ CGPA Converter</title>
+
+ <script>
+    alert('Welcome to Mumbai University CGPA Converter')
+    var x = prompt("Enter 0 for First Year or 1 for DSE : ")
+    if(x==0){
+       var a=parseFloat(prompt("Enter Sem 1 CGPA : "));
+       var b=parseFloat(prompt("Enter num 2 CGPA : "));
+       var c=parseFloat(prompt("Enter num 3 CGPA : "));
+       var d=parseFloat(prompt("Enter num 4 CGPA : "));
+       var e=parseFloat(prompt("Enter num 5 CGPA : "));
+       var f=parseFloat(prompt("Enter num 6 CGPA : "));
+       var g=parseFloat(prompt("Enter num 7 CGPA : "));
+       var sum1 = (a+b+c+d+e+f+g)/7;
+       alert("Average CGPA is : "+sum1);
+        if (sum1 > 7){
+            per = sum1*7.4+12}
+        else{
+             per = sum1*7.1+12}
+       alert("Percentage of Average CGPA is : "+per)}
+    else if(x==1){
+      var c= parseFloat(prompt("Enter num 3 CGPA : "));
+      var d= parseFloat(prompt("Enter num 4 CGPA : "));
+      var e= parseFloat(prompt("Enter num 5 CGPA : "));
+      var f= parseFloat(prompt("Enter num 6 CGPA : "));
+      var g= parseFloat(prompt("Enter num 7 CGPA : "));
+      var sum2 = (c+d+e+f+g)/5;
+      alert("Average CGPA is : "+sum2);
+        if(sum2 > 7){
+          per = sum2*8.8;
+        }
+        else{
+           per = sum2*8.8;
+        }
+        alert("Percentage of Average CGPA is : "+per)}
+    
+    else{
+    alert("Wrong Digit Entered");}
+
+
+
+
+ </script>   
+</head>
+<body style="align-content: center;">
+   <h1> Thank You for using this Service </h1><br>
+   <h1> Have a Great Day !!!! </h1>
+</body>
+</html>
+
