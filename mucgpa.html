@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Univ CGPA Converter</title>
+
+ <script>
+    alert('Welcome to Mumbai Univ CGPA Converter')
+    x = prompt("Entr 0 for Fisrt Year or 1 for DSE : ")
+    if(x==0){
+        a=prompt("Enter Sem 1 CGPA : ");
+        b=prompt("Enter num 2 CGPA : ");
+        c=prompt("Enter num 3 CGPA : ");
+        d=prompt("Enter num 4 CGPA : ");
+        e=prompt("Enter num 5 CGPA : ");
+        f=prompt("Enter num 6 CGPA : ");
+        g=prompt("Enter num 7 CGPA : ");
+        sum1 = (a+b+c+d+e+f+g)/7;
+        if (sum1 > 7){
+            per = sum1*7.4+12}
+        else{
+             per = sum1*7.1+12}
+       alert("Average CGPA is : ",+round(sum1,2),+"Percentage of Average CGPA is : ",+per)}
+    else if(x==1){
+        c=prompt("Enter num 3 CGPA : ");
+        d=prompt("Enter num 4 CGPA : ");
+        e=prompt("Enter num 5 CGPA : ");
+        f=prompt("Enter num 6 CGPA : ");
+        g=prompt("Enter num 7 CGPA : ");
+        sum2 = (c+d+e+f+g)/5
+        if(sum2 > 7){
+         per = sum2*7.4+12;
+        }
+        else{
+         per = (sum2*7.1)+12;
+        }
+        print("Average CGPA is : ",round(sum2,2),"Percentage of Average CGPA is : ",per)}
+    
+    else{
+    print("Wrong Digit Entered");}
+
+
+
+
+ </script>   
+</head>
+<body background="cyan">
+    
+</body>
+</html>
