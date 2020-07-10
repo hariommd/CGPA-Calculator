@@ -1,7 +1,6 @@
 
-Hello Folks !!!
 
-Python based ATM System
+# Python based ATM System
 
 Fetures are as follows:
     1.User Registration (Username / Pin / Initial Balance)
