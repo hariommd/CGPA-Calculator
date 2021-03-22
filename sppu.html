@@ -3,53 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pune University CGPA Converter</title>
+    <title>Mumbai University CGPA Converter</title>
 
  <script>
-    alert('Welcome to Pune University CGPA Converter')
-    var x = prompt("Enter 0 for First Year or 1 for DSE : ")
-    if(x==0){
-       var a=parseFloat(prompt("Enter Sem 1 CGPA : "));
-       var b=parseFloat(prompt("Enter Sem 2 CGPA : "));
-       var c=parseFloat(prompt("Enter Sem 3 CGPA : "));
-       var d=parseFloat(prompt("Enter Sem 4 CGPA : "));
-       var e=parseFloat(prompt("Enter Sem 5 CGPA : "));
-       var f=parseFloat(prompt("Enter Sem 6 CGPA : "));
-       var g=parseFloat(prompt("Enter Sem 7 CGPA : "));
-       var sum1 = (a+b+c+d+e+f+g)/7;
-       alert("Average CGPA is : "+sum1);
-        if (sum1 > 7){
-            per = sum1*7.4+12}
-        else{
-             per = sum1*7.1+12}
-       alert("Percentage of Average CGPA is : "+per)}
-    else if(x==1){
-      var c= parseFloat(prompt("Enter Sem 3 CGPA : "));
-      var d= parseFloat(prompt("Enter Sem 4 CGPA : "));
-      var e= parseFloat(prompt("Enter Sem 5 CGPA : "));
-      var f= parseFloat(prompt("Enter Sem 6 CGPA : "));
-      var g= parseFloat(prompt("Enter Sem 7 CGPA : "));
-      var sum2 = (c+d+e+f+g)/5;
-      alert("Average CGPA is : "+sum2);
-        if(sum2 > 7){
-          per = sum2*8.8;
-        }
-        else{
-           per = sum2*8.8;
-        }
-        alert("Percentage of Average CGPA is : "+per)}
-    
-    else{
-    alert("Wrong Digit Entered");}
+   function calculate(total){
+      var totalsum = 0
+      total.forEach(element => {
+        totalsum = totalsum + element 
+      });
+      var avg = totalsum / sem
+      var percent
+      if(avg<=7){
+         percent = avg*8.8
+      }
+      else{
+         percent = avg*8.8
+      }   
+      alert("Average CGPA is "+String(avg))
+      alert("Percentage is "+String(percent))
+   }
+   var total = []
+   var sem = parseInt(prompt("Enter Number of Semesters : "))
+   for(var i=0;i<sem;i++){
+      var marks = parseFloat(prompt("Enter CGPA of Sem "+String(i+1)))
+      total.push(marks)
+   }
 
-
+   calculate(total)
 
 
  </script>   
 </head>
 <body style="align-content: center;">
-   <h1> Thank You for using this Service </h1><br>
-   <h1> Have a Great Day !!!! </h1>
+   <h1>Designed by Hariom D</h1>
+   
 </body>
 </html>
 
